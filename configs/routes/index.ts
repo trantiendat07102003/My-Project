@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { RestActions } from "../enum";
+import { AboutUsRoute } from "./aboutus.route";
 import { HomeRoute } from "./home.route";
 import { ShopRoute } from "./shop.route";
 
@@ -9,6 +10,7 @@ export class Route {
   public static draw() {
     this.path.use("/", HomeRoute.draw());
     this.path.use("/shops", ShopRoute.draw());
+    this.path.use("/aboutus", AboutUsRoute.draw());
 
     return this.path;
   }
