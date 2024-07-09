@@ -1,4 +1,219 @@
 extends ../layout
 
 block content
-  h1= title
+  nav.custom-navbar.navbar.navbar.navbar-expand-md.navbar-dark.bg-dark(arial-label='Furni navigation bar')
+    .container
+      a.navbar-brand(href='index.html')
+        | Furni
+        span .
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarsFurni' aria-controls='navbarsFurni' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsFurni.collapse.navbar-collapse
+        ul.custom-navbar-nav.navbar-nav.ms-auto.mb-2.mb-md-0
+          li.nav-item
+            a.nav-link(href='index.html') Home
+          li
+            a.nav-link(href='shop.html') Shop
+          li
+            a.nav-link(href='about.html') About us
+          li
+            a.nav-link(href='services.html') Services
+          li
+            a.nav-link(href='blog.html') Blog
+          li
+            a.nav-link(href='contact.html') Contact us
+        ul.custom-navbar-cta.navbar-nav.mb-2.mb-md-0.ms-5
+          li
+            a.nav-link(href='#')
+              img(src='images/user.svg')
+          li
+            a.nav-link(href='cart.html')
+              img(src='images/cart.svg')
+  // End Header/Navigation
+  // Start Hero Section
+  .hero
+    .container
+      .row.justify-content-between
+        .col-lg-5
+          .intro-excerpt
+            h1 Cart
+        .col-lg-7
+  // End Hero Section
+  .untree_co-section.before-footer-section
+    .container
+      .row.mb-5
+        form.col-md-12(method='post')
+          .site-blocks-table
+            table.table
+              thead
+                tr
+                  th.product-thumbnail Image
+                  th.product-name Product
+                  th.product-price Price
+                  th.product-quantity Quantity
+                  th.product-total Total
+                  th.product-remove Remove
+              tbody
+                tr
+                  td.product-thumbnail
+                    img.img-fluid(src='images/product-1.png' alt='Image')
+                  td.product-name
+                    h2.h5.text-black Product 1
+                  td $49.00
+                  td
+                    .input-group.mb-3.d-flex.align-items-center.quantity-container(style='max-width: 120px;')
+                      .input-group-prepend
+                        button.btn.btn-outline-black.decrease(type='button') &minus;
+                      input.form-control.text-center.quantity-amount(type='text' value='1' placeholder='' aria-label='Example text with button addon' aria-describedby='button-addon1')
+                      .input-group-append
+                        button.btn.btn-outline-black.increase(type='button') &amp;plus;
+                  td $49.00
+                  td
+                    a.btn.btn-black.btn-sm(href='#') X
+                tr
+                  td.product-thumbnail
+                    img.img-fluid(src='images/product-2.png' alt='Image')
+                  td.product-name
+                    h2.h5.text-black Product 2
+                  td $49.00
+                  td
+                    .input-group.mb-3.d-flex.align-items-center.quantity-container(style='max-width: 120px;')
+                      .input-group-prepend
+                        button.btn.btn-outline-black.decrease(type='button') &minus;
+                      input.form-control.text-center.quantity-amount(type='text' value='1' placeholder='' aria-label='Example text with button addon' aria-describedby='button-addon1')
+                      .input-group-append
+                        button.btn.btn-outline-black.increase(type='button') &amp;plus;
+                  td $49.00
+                  td
+                    a.btn.btn-black.btn-sm(href='#') X
+      .row
+        .col-md-6
+          .row.mb-5
+            .col-md-6.mb-3.mb-md-0
+              button.btn.btn-black.btn-sm.btn-block Update Cart
+            .col-md-6
+              button.btn.btn-outline-black.btn-sm.btn-block Continue Shopping
+          .row
+            .col-md-12
+              label.text-black.h4(for='coupon') Coupon
+              p Enter your coupon code if you have one.
+            .col-md-8.mb-3.mb-md-0
+              input#coupon.form-control.py-3(type='text' placeholder='Coupon Code')
+            .col-md-4
+              button.btn.btn-black Apply Coupon
+        .col-md-6.pl-5
+          .row.justify-content-end
+            .col-md-7
+              .row
+                .col-md-12.text-right.border-bottom.mb-5
+                  h3.text-black.h4.text-uppercase Cart Totals
+              .row.mb-3
+                .col-md-6
+                  span.text-black Subtotal
+                .col-md-6.text-right
+                  strong.text-black $230.00
+              .row.mb-5
+                .col-md-6
+                  span.text-black Total
+                .col-md-6.text-right
+                  strong.text-black $230.00
+              .row
+                .col-md-12
+                  button.btn.btn-black.btn-lg.py-3.btn-block(onclick="window.location='checkout.html'") Proceed To Checkout
+  // Start Footer Section
+  footer.footer-section
+    .container.relative
+      .sofa-img
+        img.img-fluid(src='images/sofa.png' alt='Image')
+      .row
+        .col-lg-8
+          .subscription-form
+            h3.d-flex.align-items-center
+              span.me-1
+                img.img-fluid(src='images/envelope-outline.svg' alt='Image')
+              span Subscribe to Newsletter
+            form.row.g-3(action='#')
+              .col-auto
+                input.form-control(type='text' placeholder='Enter your name')
+              .col-auto
+                input.form-control(type='email' placeholder='Enter your email')
+              .col-auto
+                button.btn.btn-primary
+                  span.fa.fa-paper-plane
+      .row.g-5.mb-5
+        .col-lg-4
+          .mb-4.footer-logo-wrap
+            a.footer-logo(href='#')
+              | Furni
+              span .
+          p.mb-4
+            | Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+          ul.list-unstyled.custom-social
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-facebook-f
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-twitter
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-instagram
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-linkedin
+        .col-lg-8
+          .row.links-wrap
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') About us
+                li
+                  a(href='#') Services
+                li
+                  a(href='#') Blog
+                li
+                  a(href='#') Contact us
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Support
+                li
+                  a(href='#') Knowledge base
+                li
+                  a(href='#') Live chat
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Jobs
+                li
+                  a(href='#') Our team
+                li
+                  a(href='#') Leadership
+                li
+                  a(href='#') Privacy Policy
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Nordic Chair
+                li
+                  a(href='#') Kruzo Aero
+                li
+                  a(href='#') Ergonomic Chair
+      .border-top.copyright
+        .row.pt-4
+          .col-lg-6
+            p.mb-2.text-center.text-lg-start
+              | Copyright &copy;
+              script.
+                document.write(new Date().getFullYear());
+              | . All Rights Reserved. &mdash; Designed with love by 
+              a(href='https://untree.co') Untree.co
+              |  Distributed By 
+              a(hreff='https://themewagon.com') ThemeWagon
+              // License information: https://untree.co/license/
+          .col-lg-6.text-center.text-lg-end
+            ul.list-unstyled.d-inline-flex.ms-auto
+              li.me-4
+                a(href='#') Terms &amp; Conditions
+              li
+                a(href='#') Privacy Policy

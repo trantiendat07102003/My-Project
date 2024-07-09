@@ -1,4 +1,331 @@
 extends ../layout
 
 block content
-  h1= title
+  nav.custom-navbar.navbar.navbar.navbar-expand-md.navbar-dark.bg-dark(arial-label='Furni navigation bar')
+    .container
+      a.navbar-brand(href='index.html')
+        | Furni
+        span .
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarsFurni' aria-controls='navbarsFurni' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsFurni.collapse.navbar-collapse
+        ul.custom-navbar-nav.navbar-nav.ms-auto.mb-2.mb-md-0
+          li.nav-item
+            a.nav-link(href='index.html') Home
+          li
+            a.nav-link(href='shop.html') Shop
+          li
+            a.nav-link(href='about.html') About us
+          li
+            a.nav-link(href='services.html') Services
+          li.active
+            a.nav-link(href='blog.html') Blog
+          li
+            a.nav-link(href='contact.html') Contact us
+        ul.custom-navbar-cta.navbar-nav.mb-2.mb-md-0.ms-5
+          li
+            a.nav-link(href='#')
+              img(src='images/user.svg')
+          li
+            a.nav-link(href='cart.html')
+              img(src='images/cart.svg')
+  // End Header/Navigation
+  // Start Hero Section
+  .hero
+    .container
+      .row.justify-content-between
+        .col-lg-5
+          .intro-excerpt
+            h1 Blog
+            p.mb-4
+              | Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+            p
+              a.btn.btn-secondary.me-2(href='') Shop Now
+              a.btn.btn-white-outline(href='#') Explore
+        .col-lg-7
+          .hero-img-wrap
+            img.img-fluid(src='images/couch.png')
+  // End Hero Section
+  // Start Blog Section
+  .blog-section
+    .container
+      .row
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-1.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') First Time Home Owner Ideas
+              .meta
+                span
+                  | by 
+                  a(href='#') Kristin Watson
+                span
+                  | on 
+                  a(href='#') Dec 19, 2021
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-2.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') How To Keep Your Furniture Clean
+              .meta
+                span
+                  | by 
+                  a(href='#') Robert Fox
+                span
+                  | on 
+                  a(href='#') Dec 15, 2021
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-3.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') Small Space Furniture Apartment Ideas
+              .meta
+                span
+                  | by 
+                  a(href='#') Kristin Watson
+                span
+                  | on 
+                  a(href='#') Dec 12, 2021
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-1.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') First Time Home Owner Ideas
+              .meta
+                span
+                  | by 
+                  a(href='#') Kristin Watson
+                span
+                  | on 
+                  a(href='#') Dec 19, 2021
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-2.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') How To Keep Your Furniture Clean
+              .meta
+                span
+                  | by 
+                  a(href='#') Robert Fox
+                span
+                  | on 
+                  a(href='#') Dec 15, 2021
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-3.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') Small Space Furniture Apartment Ideas
+              .meta
+                span
+                  | by 
+                  a(href='#') Kristin Watson
+                span
+                  | on 
+                  a(href='#') Dec 12, 2021
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-1.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') First Time Home Owner Ideas
+              .meta
+                span
+                  | by 
+                  a(href='#') Kristin Watson
+                span
+                  | on 
+                  a(href='#') Dec 19, 2021
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-2.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') How To Keep Your Furniture Clean
+              .meta
+                span
+                  | by 
+                  a(href='#') Robert Fox
+                span
+                  | on 
+                  a(href='#') Dec 15, 2021
+        .col-12.col-sm-6.col-md-4.mb-5
+          .post-entry
+            a.post-thumbnail(href='#')
+              img.img-fluid(src='images/post-3.jpg' alt='Image')
+            .post-content-entry
+              h3
+                a(href='#') Small Space Furniture Apartment Ideas
+              .meta
+                span
+                  | by 
+                  a(href='#') Kristin Watson
+                span
+                  | on 
+                  a(href='#') Dec 12, 2021
+  // End Blog Section
+  // Start Testimonial Slider
+  .testimonial-section.before-footer-section
+    .container
+      .row
+        .col-lg-7.mx-auto.text-center
+          h2.section-title Testimonials
+      .row.justify-content-center
+        .col-lg-12
+          .testimonial-slider-wrap.text-center
+            #testimonial-nav
+              span.prev(data-controls='prev')
+                span.fa.fa-chevron-left
+              span.next(data-controls='next')
+                span.fa.fa-chevron-right
+            .testimonial-slider
+              .item
+                .row.justify-content-center
+                  .col-lg-8.mx-auto
+                    .testimonial-block.text-center
+                      blockquote.mb-5
+                        p
+                          | &ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;
+                      .author-info
+                        .author-pic
+                          img.img-fluid(src='images/person-1.png' alt='Maria Jones')
+                        h3.font-weight-bold Maria Jones
+                        span.position.d-block.mb-3 CEO, Co-Founder, XYZ Inc.
+              // END item
+              .item
+                .row.justify-content-center
+                  .col-lg-8.mx-auto
+                    .testimonial-block.text-center
+                      blockquote.mb-5
+                        p
+                          | &ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;
+                      .author-info
+                        .author-pic
+                          img.img-fluid(src='images/person-1.png' alt='Maria Jones')
+                        h3.font-weight-bold Maria Jones
+                        span.position.d-block.mb-3 CEO, Co-Founder, XYZ Inc.
+              // END item
+              .item
+                .row.justify-content-center
+                  .col-lg-8.mx-auto
+                    .testimonial-block.text-center
+                      blockquote.mb-5
+                        p
+                          | &ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;
+                      .author-info
+                        .author-pic
+                          img.img-fluid(src='images/person-1.png' alt='Maria Jones')
+                        h3.font-weight-bold Maria Jones
+                        span.position.d-block.mb-3 CEO, Co-Founder, XYZ Inc.
+              // END item
+  // End Testimonial Slider
+  // Start Footer Section
+  footer.footer-section
+    .container.relative
+      .sofa-img
+        img.img-fluid(src='images/sofa.png' alt='Image')
+      .row
+        .col-lg-8
+          .subscription-form
+            h3.d-flex.align-items-center
+              span.me-1
+                img.img-fluid(src='images/envelope-outline.svg' alt='Image')
+              span Subscribe to Newsletter
+            form.row.g-3(action='#')
+              .col-auto
+                input.form-control(type='text' placeholder='Enter your name')
+              .col-auto
+                input.form-control(type='email' placeholder='Enter your email')
+              .col-auto
+                button.btn.btn-primary
+                  span.fa.fa-paper-plane
+      .row.g-5.mb-5
+        .col-lg-4
+          .mb-4.footer-logo-wrap
+            a.footer-logo(href='#')
+              | Furni
+              span .
+          p.mb-4
+            | Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+          ul.list-unstyled.custom-social
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-facebook-f
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-twitter
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-instagram
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-linkedin
+        .col-lg-8
+          .row.links-wrap
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') About us
+                li
+                  a(href='#') Services
+                li
+                  a(href='#') Blog
+                li
+                  a(href='#') Contact us
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Support
+                li
+                  a(href='#') Knowledge base
+                li
+                  a(href='#') Live chat
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Jobs
+                li
+                  a(href='#') Our team
+                li
+                  a(href='#') Leadership
+                li
+                  a(href='#') Privacy Policy
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Nordic Chair
+                li
+                  a(href='#') Kruzo Aero
+                li
+                  a(href='#') Ergonomic Chair
+      .border-top.copyright
+        .row.pt-4
+          .col-lg-6
+            p.mb-2.text-center.text-lg-start
+              | Copyright &copy;
+              script.
+                document.write(new Date().getFullYear());
+              | . All Rights Reserved. &mdash; Designed with love by 
+              a(href='https://untree.co') Untree.co
+              |  Distributed By 
+              a(hreff='https://themewagon.com') ThemeWagon
+              // License information: https://untree.co/license/
+          .col-lg-6.text-center.text-lg-end
+            ul.list-unstyled.d-inline-flex.ms-auto
+              li.me-4
+                a(href='#') Terms &amp; Conditions
+              li
+                a(href='#') Privacy Policy

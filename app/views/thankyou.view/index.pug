@@ -1,4 +1,150 @@
 extends ../layout
 
 block content
-  h1= title
+  nav.custom-navbar.navbar.navbar.navbar-expand-md.navbar-dark.bg-dark(arial-label='Furni navigation bar')
+    .container
+      a.navbar-brand(href='index.html')
+        | Furni
+        span .
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarsFurni' aria-controls='navbarsFurni' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsFurni.collapse.navbar-collapse
+        ul.custom-navbar-nav.navbar-nav.ms-auto.mb-2.mb-md-0
+          li.nav-item
+            a.nav-link(href='index.html') Home
+          li
+            a.nav-link(href='shop.html') Shop
+          li
+            a.nav-link(href='about.html') About us
+          li
+            a.nav-link(href='services.html') Services
+          li
+            a.nav-link(href='blog.html') Blog
+          li
+            a.nav-link(href='contact.html') Contact us
+        ul.custom-navbar-cta.navbar-nav.mb-2.mb-md-0.ms-5
+          li
+            a.nav-link(href='#')
+              img(src='images/user.svg')
+          li
+            a.nav-link(href='cart.html')
+              img(src='images/cart.svg')
+  // End Header/Navigation
+  // Start Hero Section
+  .hero
+    .container
+      .row.justify-content-between
+        .col-lg-5
+          .intro-excerpt
+            h1 Cart
+        .col-lg-7
+  // End Hero Section
+  .untree_co-section
+    .container
+      .row
+        .col-md-12.text-center.pt-5
+          span.display-3.thankyou-icon.text-primary
+            svg.bi.bi-cart-check.mb-5(width='1em' height='1em' viewbox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+              path(fill-rule='evenodd' d='M11.354 5.646a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708 0z')
+              path(fill-rule='evenodd' d='M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z')
+          h2.display-3.text-black Thank you!
+          p.lead.mb-5 You order was successfuly completed.
+          p
+            a.btn.btn-sm.btn-outline-black(href='shop.html') Back to shop
+  // Start Footer Section
+  footer.footer-section
+    .container.relative
+      .sofa-img
+        img.img-fluid(src='images/sofa.png' alt='Image')
+      .row
+        .col-lg-8
+          .subscription-form
+            h3.d-flex.align-items-center
+              span.me-1
+                img.img-fluid(src='images/envelope-outline.svg' alt='Image')
+              span Subscribe to Newsletter
+            form.row.g-3(action='#')
+              .col-auto
+                input.form-control(type='text' placeholder='Enter your name')
+              .col-auto
+                input.form-control(type='email' placeholder='Enter your email')
+              .col-auto
+                button.btn.btn-primary
+                  span.fa.fa-paper-plane
+      .row.g-5.mb-5
+        .col-lg-4
+          .mb-4.footer-logo-wrap
+            a.footer-logo(href='#')
+              | Furni
+              span .
+          p.mb-4
+            | Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+          ul.list-unstyled.custom-social
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-facebook-f
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-twitter
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-instagram
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-linkedin
+        .col-lg-8
+          .row.links-wrap
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') About us
+                li
+                  a(href='#') Services
+                li
+                  a(href='#') Blog
+                li
+                  a(href='#') Contact us
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Support
+                li
+                  a(href='#') Knowledge base
+                li
+                  a(href='#') Live chat
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Jobs
+                li
+                  a(href='#') Our team
+                li
+                  a(href='#') Leadership
+                li
+                  a(href='#') Privacy Policy
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Nordic Chair
+                li
+                  a(href='#') Kruzo Aero
+                li
+                  a(href='#') Ergonomic Chair
+      .border-top.copyright
+        .row.pt-4
+          .col-lg-6
+            p.mb-2.text-center.text-lg-start
+              | Copyright &copy;
+              script.
+                document.write(new Date().getFullYear());
+              | . All Rights Reserved. &mdash; Designed with love by 
+              a(href='https://untree.co') Untree.co
+              |  Distributed By 
+              a(href='https://themewagon.com') ThemeWagon
+              // License information: https://untree.co/license/
+          .col-lg-6.text-center.text-lg-end
+            ul.list-unstyled.d-inline-flex.ms-auto
+              li.me-4
+                a(href='#') Terms &amp; Conditions
+              li
+                a(href='#') Privacy Policy

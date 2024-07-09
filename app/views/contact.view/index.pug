@@ -1,4 +1,200 @@
 extends ../layout
 
 block content
-  h1= title
+  nav.custom-navbar.navbar.navbar.navbar-expand-md.navbar-dark.bg-dark(arial-label='Furni navigation bar')
+    .container
+      a.navbar-brand(href='index.html')
+        | Furni
+        span .
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarsFurni' aria-controls='navbarsFurni' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsFurni.collapse.navbar-collapse
+        ul.custom-navbar-nav.navbar-nav.ms-auto.mb-2.mb-md-0
+          li.nav-item
+            a.nav-link(href='index.html') Home
+          li
+            a.nav-link(href='shop.html') Shop
+          li
+            a.nav-link(href='about.html') About us
+          li
+            a.nav-link(href='services.html') Services
+          li
+            a.nav-link(href='blog.html') Blog
+          li.active
+            a.nav-link(href='contact.html') Contact us
+        ul.custom-navbar-cta.navbar-nav.mb-2.mb-md-0.ms-5
+          li
+            a.nav-link(href='#')
+              img(src='images/user.svg')
+          li
+            a.nav-link(href='cart.html')
+              img(src='images/cart.svg')
+  // End Header/Navigation
+  // Start Hero Section
+  .hero
+    .container
+      .row.justify-content-between
+        .col-lg-5
+          .intro-excerpt
+            h1 Contact
+            p.mb-4
+              | Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+            p
+              a.btn.btn-secondary.me-2(href='') Shop Now
+              a.btn.btn-white-outline(href='#') Explore
+        .col-lg-7
+          .hero-img-wrap
+            img.img-fluid(src='images/couch.png')
+  // End Hero Section
+  // Start Contact Form
+  .untree_co-section
+    .container
+      .block
+        .row.justify-content-center
+          .col-md-8.col-lg-8.pb-4
+            .row.mb-5
+              .col-lg-4
+                .service.no-shadow.align-items-center.link.horizontal.d-flex.active(data-aos='fade-left' data-aos-delay='0')
+                  .service-icon.color-1.mb-4
+                    svg.bi.bi-geo-alt-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewbox='0 0 16 16')
+                      path(d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z')
+                  // /.icon
+                  .service-contents
+                    p 43 Raymouth Rd. Baltemoer, London 3910
+                  // /.service-contents
+                // /.service
+              .col-lg-4
+                .service.no-shadow.align-items-center.link.horizontal.d-flex.active(data-aos='fade-left' data-aos-delay='0')
+                  .service-icon.color-1.mb-4
+                    svg.bi.bi-envelope-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewbox='0 0 16 16')
+                      path(d='M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z')
+                  // /.icon
+                  .service-contents
+                    p info@yourdomain.com
+                  // /.service-contents
+                // /.service
+              .col-lg-4
+                .service.no-shadow.align-items-center.link.horizontal.d-flex.active(data-aos='fade-left' data-aos-delay='0')
+                  .service-icon.color-1.mb-4
+                    svg.bi.bi-telephone-fill(xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewbox='0 0 16 16')
+                      path(fill-rule='evenodd' d='M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z')
+                  // /.icon
+                  .service-contents
+                    p +1 294 3925 3939
+                  // /.service-contents
+                // /.service
+            form
+              .row
+                .col-6
+                  .form-group
+                    label.text-black(for='fname') First name
+                    input#fname.form-control(type='text')
+                .col-6
+                  .form-group
+                    label.text-black(for='lname') Last name
+                    input#lname.form-control(type='text')
+              .form-group
+                label.text-black(for='email') Email address
+                input#email.form-control(type='email')
+              .form-group.mb-5
+                label.text-black(for='message') Message
+                textarea#message.form-control(name='' cols='30' rows='5')
+              button.btn.btn-primary-hover-outline(type='submit') Send Message
+  // End Contact Form
+  // Start Footer Section
+  footer.footer-section
+    .container.relative
+      .sofa-img
+        img.img-fluid(src='images/sofa.png' alt='Image')
+      .row
+        .col-lg-8
+          .subscription-form
+            h3.d-flex.align-items-center
+              span.me-1
+                img.img-fluid(src='images/envelope-outline.svg' alt='Image')
+              span Subscribe to Newsletter
+            form.row.g-3(action='#')
+              .col-auto
+                input.form-control(type='text' placeholder='Enter your name')
+              .col-auto
+                input.form-control(type='email' placeholder='Enter your email')
+              .col-auto
+                button.btn.btn-primary
+                  span.fa.fa-paper-plane
+      .row.g-5.mb-5
+        .col-lg-4
+          .mb-4.footer-logo-wrap
+            a.footer-logo(href='#')
+              | Furni
+              span .
+          p.mb-4
+            | Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+          ul.list-unstyled.custom-social
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-facebook-f
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-twitter
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-instagram
+            li
+              a(href='#')
+                span.fa.fa-brands.fa-linkedin
+        .col-lg-8
+          .row.links-wrap
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') About us
+                li
+                  a(href='#') Services
+                li
+                  a(href='#') Blog
+                li
+                  a(href='#') Contact us
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Support
+                li
+                  a(href='#') Knowledge base
+                li
+                  a(href='#') Live chat
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Jobs
+                li
+                  a(href='#') Our team
+                li
+                  a(href='#') Leadership
+                li
+                  a(href='#') Privacy Policy
+            .col-6.col-sm-6.col-md-3
+              ul.list-unstyled
+                li
+                  a(href='#') Nordic Chair
+                li
+                  a(href='#') Kruzo Aero
+                li
+                  a(href='#') Ergonomic Chair
+      .border-top.copyright
+        .row.pt-4
+          .col-lg-6
+            p.mb-2.text-center.text-lg-start
+              | Copyright &copy;
+              script.
+                document.write(new Date().getFullYear());
+              | . All Rights Reserved. &mdash; Designed with love by 
+              a(href='https://untree.co') Untree.co
+              |  Distributed By 
+              a(hreff='https://themewagon.com') ThemeWagon
+              // License information: https://untree.co/license/
+          .col-lg-6.text-center.text-lg-end
+            ul.list-unstyled.d-inline-flex.ms-auto
+              li.me-4
+                a(href='#') Terms &amp; Conditions
+              li
+                a(href='#') Privacy Policy
