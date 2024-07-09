@@ -3,7 +3,7 @@ extends ../layout
 block content
   nav.custom-navbar.navbar.navbar.navbar-expand-md.navbar-dark.bg-dark(arial-label='Furni navigation bar')
     .container
-      a.navbar-brand(href='index.html')
+      a.navbar-brand(href='/')
         | Furni
         span .
       button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarsFurni' aria-controls='navbarsFurni' aria-expanded='false' aria-label='Toggle navigation')
@@ -11,23 +11,23 @@ block content
       #navbarsFurni.collapse.navbar-collapse
         ul.custom-navbar-nav.navbar-nav.ms-auto.mb-2.mb-md-0
           li.nav-item
-            a.nav-link(href='index.html') Home
+            a.nav-link(href='/') Home
           li
-            a.nav-link(href='shop.html') Shop
+            a.nav-link(href='/shops') Shop
           li
-            a.nav-link(href='about.html') About us
+            a.nav-link(href='/aboutus') About us
           li
-            a.nav-link(href='services.html') Services
+            a.nav-link(href='/services') Services
           li
-            a.nav-link(href='blog.html') Blog
+            a.nav-link(href='/blogs') Blog
           li.active
-            a.nav-link(href='contact.html') Contact us
+            a.nav-link(href='/contacts') Contact us
         ul.custom-navbar-cta.navbar-nav.mb-2.mb-md-0.ms-5
           li
             a.nav-link(href='#')
               img(src='images/user.svg')
           li
-            a.nav-link(href='cart.html')
+            a.nav-link(href='/carts')
               img(src='images/cart.svg')
   // End Header/Navigation
   // Start Hero Section
