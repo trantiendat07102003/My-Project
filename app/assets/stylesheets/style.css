@@ -1039,3 +1039,163 @@ textarea {
   border-radius: 50%;
   background: rgba(59, 93, 80, 0.2);
 }
+
+.login-form {
+  font-family: Arial, sans-serif;
+  background: url('https://png.pngtree.com/thumb_back/fw800/background/20231006/pngtree-d-rendering-of-product-display-podium-against-a-scenic-natural-background-image_13533896.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container .social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.login-container .social-login button {
+  width: 48%;
+  background-color: #4267B2;
+  /* Facebook blue */
+}
+
+.login-container .social-login button.google {
+  background-color: #DB4437;
+  /* Google red */
+}
+
+.login-container .home-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-container .home-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.login-container .home-button a:hover {
+  background-color: #218838;
+}
+
+.sign-up-form {
+  font-family: Arial, sans-serif;
+  background: url('https://png.pngtree.com/thumb_back/fw800/background/20231006/pngtree-d-rendering-of-product-display-podium-against-a-scenic-natural-background-image_13533896.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  margin-bottom: 20px;
+}
+
+.register-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #218838;
+}
+
+.register-container .social-register {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.register-container .social-register button {
+  width: 48%;
+  background-color: #4267B2;
+  /* Facebook blue */
+}
+
+.register-container .social-register button.google {
+  background-color: #DB4437;
+  /* Google red */
+}
+
+.register-container .home-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-container .home-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.register-container .home-button a:hover {
+  background-color: #0056b3;
+}

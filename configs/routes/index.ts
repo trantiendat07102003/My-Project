@@ -6,8 +6,10 @@ import { CartRoute } from "./cart.route";
 import { CheckOutRoute } from "./checkout.route";
 import { ContactRoute } from "./contact.route";
 import { HomeRoute } from "./home.route";
+import { LoginRoute } from "./login.route";
 import { ServiceRoute } from "./services.route";
 import { ShopRoute } from "./shop.route";
+import { SignUpRoute } from "./signup.route";
 import { ThankYouRoute } from "./thankyou.route";
 
 export class Route {
@@ -23,6 +25,8 @@ export class Route {
     this.path.use("/contacts", ContactRoute.draw());
     this.path.use("/services", ServiceRoute.draw());
     this.path.use("/thankyou", ThankYouRoute.draw());
+    this.path.use("/login", LoginRoute.draw());
+    this.path.use("/signup", SignUpRoute.draw());
 
     return this.path;
   }

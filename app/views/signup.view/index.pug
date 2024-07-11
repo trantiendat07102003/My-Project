@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+  .sign-up-form
+    .register-container
+      h2 &Dstrok;&abreve;ng k&yacute;
+      form
+        input(type='text' placeholder='Họ và tên' required='')
+        input(type='email' placeholder='Email' required='')
+        input(type='password' placeholder='Mật khẩu' required='')
+        input(type='password' placeholder='Nhập lại mật khẩu' required='')
+        button(type='submit') &Dstrok;&abreve;ng k&yacute;
+      p
+        | &Dstrok;&atilde; c&oacute; t&agrave;i kho&#x1EA3;n? 
+        a(href='/login') &Dstrok;&abreve;ng nh&#x1EAD;p
+      .social-register
+        button &Dstrok;&abreve;ng k&yacute; b&#x1EB1;ng Facebook
+        button.google &Dstrok;&abreve;ng k&yacute; b&#x1EB1;ng Google
+      .home-button
+        a(href='/') Tr&#x1EDF; v&#x1EC1; trang ch&#x1EE7;
